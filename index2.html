@@ -40,7 +40,7 @@
     ></div>
 
     <!-- BLACKHOLE INTRO -->
-    <div id="blackholeIntro" class="fixed inset-0 z-[9999] bg-[#111]">
+    <div id="blackholeIntro" class="fixed inset-0 z-[9999] bg-[#000000]">
       <div id="blackhole">
         <div class="centerHover"><span>ENTER</span></div>
       </div>
@@ -576,7 +576,7 @@
     </div>
     <div
       id="scrollTopBtn"
-      class="fixed bottom-10 right-10 bg-[#212121] py-2 px-3 text-[var(--particle-color)] hover:text-[var(--particle-color)]/80 rounded-[0.5rem] opacity-0 transition-all duration-300 z-50 cursor-pointer"
+      class="fixed bottom-30 right-30 bg-[#212121] py-2 px-3 text-[var(--particle-color)] hover:text-[var(--particle-color)]/80 rounded-[0.5rem] opacity-0 transition-all duration-300 z-50 cursor-pointer"
     >
       <i class="fa-solid fa-arrow-up-long"></i>
     </div>
@@ -589,9 +589,9 @@
 
       myBox.addEventListener("scroll", () => {
         const scrollPosition = myBox.scrollTop;
-        const halfHeight = myBox.scrollHeight / 2;
+        const triggerHeight = myBox.scrollHeight - myBox.clientHeight;
 
-        if (scrollPosition > halfHeight) {
+        if (scrollPosition > triggerHeight * 0.1) {
           scrollTopBtn.classList.add("show");
         } else {
           scrollTopBtn.classList.remove("show");

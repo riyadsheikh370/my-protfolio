@@ -3,6 +3,7 @@
   --light-color: #7b0323;
   --particle-color: #a40b34;
   --dark-gray: #212121;
+  scroll-behavior: smooth;
 }
 
 @keyframes flipIn {
@@ -165,7 +166,7 @@
 #blackholeIntro {
   position: fixed;
   inset: 0;
-  background: #161616;
+  background: #000000;
 }
 
 #blackhole {

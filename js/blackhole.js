@@ -341,7 +341,7 @@ function blackhole(element) {
     const now = new Date().getTime();
     currentTime = (now - startTime) / 50;
 
-    context.fillStyle = "rgba(25,25,25,0.2)"; // somewhat clear the context, this way there will be trails behind the stars
+    context.fillStyle = "rgba(0, 0, 0, 0.2)"; // somewhat clear the context, this way there will be trails behind the stars
     context.fillRect(0, 0, cw, ch);
 
     for (let i = 0; i < stars.length; i++) {
@@ -355,7 +355,7 @@ function blackhole(element) {
   }
 
   function init() {
-    context.fillStyle = "rgba(25,25,25,1)"; // Initial clear of the canvas
+    context.fillStyle = "rgba(0, 0, 0, 1)"; // Initial clear of the canvas
     context.fillRect(0, 0, cw, ch);
     for (let i = 0; i < 2500; i++) {
       // create 2500 stars
