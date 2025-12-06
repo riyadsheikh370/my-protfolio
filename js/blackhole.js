@@ -324,7 +324,7 @@ function blackhole(element) {
                 iframe.loading = "lazy";
                 iframe.referrerPolicy = "no-referrer-when-downgrade";
                 iframe.src =
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0191944617753!2d-122.41941508468137!3d37.77492927975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b6c0df3%3A0xe4a319a742b81d85!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus&maptype=roadmap&gestureHandling=greedy";
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58393.920810928284!2d90.28261172946607!3d23.832106305979032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c124b21679e3%3A0x48d7e114b00a18cb!2sPallabi%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1765013781947!5m2!1sen!2sbd";
 
                 mapContainer.innerHTML = "";
                 mapContainer.appendChild(iframe);
